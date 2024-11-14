@@ -1,1 +1,2 @@
-# pelmodificaciones
+# seccionlicenciasresponsivo
+seccion licencias responsivo
