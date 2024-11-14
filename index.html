@@ -127,61 +127,62 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
-            .top-bar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .top-bar .right {
-                justify-content: flex-start;
-                margin-top: 10px;
-            }
-            .header {
-                padding: 10px;
-            }
-            .header h1 {
-                font-size: 24px;
-            }
-            .header .left-logo, .header .right-logo {
-                position: static;
-                margin-bottom: 10px;
-            }
-            .nav-bar ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            .nav-bar .search {
-                width: 100%;
-            }
-            .nav-bar .search input {
-                width: 90%;
-                max-width: 300px;
-            }
-        }
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-bar .right {
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .header {
+        padding: 10px;
+    }
+    .header h1 {
+        font-size: 24px;
+    }
+    .header .left-logo, .header .right-logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+    .header .left-logo img,
+    .header .right-logo img {
+        width: 80px;
+        height: auto; /* Para mantener la proporción */
+    }
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar .search {
+        width: 100%;
+    }
+    .nav-bar .search input {
+        width: 90%;
+        max-width: 300px;
+    }
+}
 
-        @media (max-width: 480px) {
-            .header h1 {
-                font-size: 20px;
-            }
-            .top-bar .left span, .top-bar .right span, .top-bar .right a {
-                font-size: 12px;
-            }
-            .nav-bar ul li a {
-                font-size: 14px;
-            }
-            .nav-bar .search input {
-                font-size: 14px;
-            }
-        }
-        .boton-regresar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: none;
-    padding: 0.5em 1em;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+    }
+    .top-bar .left span,
+    .top-bar .right span,
+    .top-bar .right a {
+        font-size: 12px;
+    }
+    .nav-bar ul li a {
+        font-size: 14px;
+    }
+    .nav-bar .search input {
+        font-size: 14px;
+    }
+    .header .left-logo img,
+    .header .right-logo img {
+        width: 60px; /* Tamaño ajustado para pantallas muy pequeñas */
+        height: auto; /* Mantiene la proporción */
+    }
 }
 
 .boton-regresar:hover {
